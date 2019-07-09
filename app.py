@@ -34,5 +34,5 @@ class TwitterBot:
                 time.sleep(2)
 
 
-test = TwitterBot("debugmedia", "Bullyboys@12345")
+test = TwitterBot("xxxxx", "xxxxxxx")
 test.login()
