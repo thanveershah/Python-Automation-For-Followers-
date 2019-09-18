@@ -1,21 +1,20 @@
-import json
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import time
 
 
-# Sample Json
+class TwitterBot:
+    def __init__(self):
+        self.bot = webdriver.Firefox()
 
-userJSON = '{"firstname":"John","lastname":"Doe"}'
+    def startProcess(self):
+        bot = self.bot
+        bot.get("http://localhost:3001/admin")
+        time.sleep(2)
+        for x in bot.find_elements_by_class_name("form-control"):
+            x.clear()
+            x.send_keys("sss")
 
 
-user = json.loads(userJSON)
-
-print(len(user))
-
-
-car = {
-    "make": "Ford",
-    "name": "test"
-}
-
-carJSON = json.dumps(car)
-
-print(carJSON)
+test = TwitterBot()
+test.startProcess()
