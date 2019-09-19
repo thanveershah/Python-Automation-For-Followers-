@@ -5,11 +5,6 @@ import time
 import openpyxl
 
 
-wb = openpyxl.Workbook()
-
-sheet = wb.active
-
-
 class TwitterBot:
     def __init__(self, username, password):
         self.username = username
@@ -53,72 +48,6 @@ class TwitterBot:
                     time.sleep(2)
 
 
-test = TwitterBot("dapperman019", "sanooja10")
+test = TwitterBot("username", "password")
 test.login()
 test.startAction()
-
-
-# from selenium import webdriver
-# from selenium.webdriver.common.keys import Keys
-# import time
-
-# class TwitterBot:
-#     def __init__(self):
-#         self.username = ["Endro@bma-merdeka.com","bali@esmirada.com"]
-#         self.bot = webdriver.Firefox()
-
-#     def login(self):
-#         bot = self.bot
-#         bot.get("https://skmei.in/shop/skmei-1486-original-drum-wrist-watch-men/")
-#         time.sleep(3)
-#         for x in self.username:
-#             username = bot.find_element_by_name("alert_email")
-#             username.clear()
-#             username.send_keys(x)
-#             time.sleep(3)
-#             bot.find_element_by_name("alert_button").click()
-#             time.sleep(3)
-#             bot.refresh()
-#             time.sleep(3)
-
-# test = TwitterBot()
-# test.login()
-
-
-# # distance = 50
-# # pyautogui.FAILSAFE = True
-# distance = 100
-
-# while distance > 0:
-#     time.sleep(2)
-#     pyautogui.keyDown('ctrl')
-#     pyautogui.keyDown('shift')
-#     pyautogui.keyDown('s')
-#     time.sleep(2)
-#     pyautogui.click(pyautogui.locateCenterOnScreen('Capture.png'))
-#     time.sleep(1)
-#     pyautogui.typewrite("a")
-#     time.sleep(1)
-#     pyautogui.press("enter")
-#     time.sleep(1)
-#     pyautogui.click(pyautogui.locateCenterOnScreen('save.png'))
-#     time.sleep(2)
-#     pyautogui.click(pyautogui.locateCenterOnScreen('Capture2.png'))
-#     time.sleep(2)
-#     pyautogui.click(pyautogui.locateCenterOnScreen('file.png'))
-#     time.sleep(2)
-#     pyautogui.press(['down', 'down', 'down', 'down', 'down', 'down'])
-#     time.sleep(1)
-#     pyautogui.press("enter")
-#     time.sleep(1)
-
-# time.sleep(3)
-# pyautogui.click()
-# distance = 200
-# while distance > 0:
-#     pyautogui.dragRel(distance, 0, duration=0.5)
-#     distance -= 5
-#     pyautogui.dragRel(0, distance, duration=0.5)
-#     pyautogui.dragRel(-distance, 0, duration=0.5)
-#     distance -= 5
-#     pyautogui.dragRel(0, -distance, duration=0.5)

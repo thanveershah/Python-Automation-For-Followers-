@@ -5673,25 +5673,42 @@ console.error: BroadcastService:
   Stack:
     remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
 
-1568811536150	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofile.YDaeWcF5W4Nt"
-1568811537053	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1568811537054	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1568811537054	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-1568811540995	Marionette	INFO	Listening on port 63851
-1568811541388	Marionette	WARN	TLS certificate errors will be ignored for this session
-[Child 14176, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Child 14176, Chrome_ChildThread] WA[Parent 15184, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Child 9800, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Child 9800, C1568811555498	Marionette	INFO	Stopped listening on port 63851
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221568814886596%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221568816154119%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221568816392824%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+[Parent 1344, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 12504, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 1344, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 1344, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1568817535651	Marionette	INFO	Stopped listening on port 60261
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
-[GPU 130
+
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
-1568811907635	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofile.zJ69TfZbd8f4"
-1568811909038	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1568811909039	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+reenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
 1568811909039	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
 [Child 13800, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
 [Child 13800, C1568811912124	Marionette	INFO	Listening on port 64260
